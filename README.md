@@ -19,3 +19,4 @@
 - instructions: https://ionicframework.com/docs/react/your-first-app
 - tsconfig.js turned strict to false
 - converted ts back to js
+- `ionic serve` to start, localhost:8100
