@@ -6,17 +6,23 @@
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-body">
-      <h1>Welcome to @ionic/vue</h1>
+      <Navigation />
+      <h1>Welcome to @ionic/vue home page</h1>
       <img alt="Vue logo" src="../assets/logo.png" />
     </ion-content>
   </div>
 </template>
 
 <script>
+import Navigation from "@/components/Navigation";
+
 export default {
   name: "HelloWorld",
   data() {
     return {};
+  },
+  components: {
+    Navigation
   }
 };
 </script>

@@ -12,3 +12,4 @@
 - - - delete node_modules folder
 - - - add in "ionicons": "4.5.9-1" to dev dependences
 - - - npm install
+- finally got navigation working
