@@ -13,3 +13,9 @@
 - - - add in "ionicons": "4.5.9-1" to dev dependences
 - - - npm install
 - finally got navigation working
+
+# react-ionic-test
+
+- instructions: https://ionicframework.com/docs/react/your-first-app
+- tsconfig.js turned strict to false
+- converted ts back to js
