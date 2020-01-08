@@ -20,3 +20,11 @@
 - tsconfig.js turned strict to false
 - converted ts back to js
 - `ionic serve` to start, localhost:8100
+
+# react-reactnative-test
+
+- instructions: https://facebook.github.io/react-native/docs/getting-started
+- installed expo cli (interesting name) expo init [projectname]
+- npm start (localhost:19002)
+- not particularly useful for desktop development of app as it doesn't build to webview
+- would need android studio and/or xcode to make any real use of this, can't just run in chrome
