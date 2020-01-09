@@ -66,6 +66,7 @@ export default {
     },
     loadCanvasWithSVG() {
       //this.signaturePad.fromDataURL("data:image/png;base64,iVBORw0K...");
+
       let canvas = document.querySelector("canvas");
       let ctx = canvas.getContext("2d");
       let imageData = localStorage.getItem("image1");
@@ -76,11 +77,7 @@ export default {
         ctx.drawImage(img, 0, 0);
       };
 
-      /*
-      img.onload = () => {
-        document.querySelector("canvas").drawImage(img, 0, 0);
-      };
-      */
+      //let imageData = localStorage.getItem("image1");
       //this.signaturePad.fromDataURL(`data:image/png;base64,${imageData}`);
       //this.signaturePad.fromDataURL("data:image/png;base64,iVBORw0K...");
     }
@@ -98,6 +95,8 @@ canvas {
 </style>
 
 <!--
+Note only using his methods for actually drawing on the canvas, using normal js 
+for saving and repopulating data onto canvas not his method to return data
 https://www.npmjs.com/package/signature_pad
 https://github.com/szimek/signature_pad
 
