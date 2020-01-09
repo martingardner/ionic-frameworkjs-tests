@@ -9,6 +9,10 @@
       <Navigation />
       <h1>Welcome to @ionic/vue home page</h1>
       <img alt="Vue logo" src="../assets/logo.png" />
+      <ion-item>
+        <ion-label>Yes / No</ion-label>
+        <ion-toggle color="light"></ion-toggle>
+        </ion-item>
     </ion-content>
   </div>
 </template>
