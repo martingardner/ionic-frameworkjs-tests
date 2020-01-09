@@ -12,13 +12,17 @@
       <ion-item>
         <ion-label>Yes / No</ion-label>
         <ion-toggle color="light"></ion-toggle>
-        </ion-item>
+      </ion-item>
+      <ion-item>
+        <DrawingPad />
+      </ion-item>
     </ion-content>
   </div>
 </template>
 
 <script>
 import Navigation from "@/components/Navigation";
+import DrawingPad from "@/components/DrawingPad";
 
 export default {
   name: "HelloWorld",
@@ -26,7 +30,8 @@ export default {
     return {};
   },
   components: {
-    Navigation
+    Navigation,
+    DrawingPad
   }
 };
 </script>
