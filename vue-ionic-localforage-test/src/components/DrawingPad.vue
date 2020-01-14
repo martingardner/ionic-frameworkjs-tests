@@ -61,21 +61,26 @@ export default {
     saveDataToSVG() {
       //let imageData = this.signaturePad.toDataURL("image/svg+xml");
       let imageData = this.signaturePad.toDataURL();
-      console.log("imageData", imageData);
-      localStorage.setItem("image1", imageData);
+      console.log("imageData save", imageData);
+      //localStorage.setItem("image1", imageData);
+      this.$setItem("image1", imageData);
     },
     loadCanvasWithSVG() {
       //this.signaturePad.fromDataURL("data:image/png;base64,iVBORw0K...");
 
       let canvas = document.querySelector("canvas");
       let ctx = canvas.getContext("2d");
-      let imageData = localStorage.getItem("image1");
-      let img = new Image();
+      //let imageData = localStorage.getItem("image1");
+      //let imageData = this.$getItem("image1");
+      Promise.resolve(this.$getItem("image1")).then(data => {
+        console.log("imageData load", data);
+        let img = new Image();
 
-      img.src = imageData;
-      img.onload = () => {
-        ctx.drawImage(img, 0, 0);
-      };
+        img.src = data;
+        img.onload = () => {
+          ctx.drawImage(img, 0, 0);
+        };
+      });
 
       //let imageData = localStorage.getItem("image1");
       //this.signaturePad.fromDataURL(`data:image/png;base64,${imageData}`);
