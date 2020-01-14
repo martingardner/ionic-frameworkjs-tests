@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <ion-app>
+      <!--<ion-vue-router />-->
       <router-view />
     </ion-app>
   </div>
@@ -12,6 +13,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

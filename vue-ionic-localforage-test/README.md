@@ -1,4 +1,4 @@
-# vue-ionic-localforage-test
+# vue-ionic-test
 
 ## Project setup
 ```

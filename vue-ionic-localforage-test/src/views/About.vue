@@ -1,5 +1,24 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <AboutComponent />
+    <div class="prototype-test">
+      {{ this.title }}
+    </div>
   </div>
 </template>
+
+<script>
+import AboutComponent from "@/components/AboutComponent.vue";
+
+export default {
+  name: "About",
+  data() {
+    return {
+      title: this.$TTitle
+    };
+  },
+  components: {
+    AboutComponent
+  }
+};
+</script>
