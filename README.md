@@ -29,3 +29,13 @@
 - npm start (localhost:19002)
 - not particularly useful for desktop development of app as it doesn't build to webview
 - would need android studio and/or xcode to make any real use of this, can't just run in chrome
+
+#vue-ionic-localforage-test
+
+- using base of vue-ionic-test and adding in localforage code
+- https://www.npmjs.com/package/localforage
+- https://www.npmjs.com/package/vue-localforage
+- for cryptojs using sjcl
+- - https://www.npmjs.com/package/sjcl
+- - http://bitwiseshiftleft.github.io/sjcl/
+- - https://github.com/bitwiseshiftleft/sjcl
